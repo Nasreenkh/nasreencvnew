@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px; /* Adjusted padding for better layout */
+}
+
+.resume-container {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(102, 102, 231, 0.5);
+}
+
+.left-section {
+    background-color: rgb(7, 7, 7);
+    color: white; /* Changed from white for better readability */
+    width: 35%;
+    padding: 20px;
+    text-align: center;
+    border-right: 5px solid rgb(161, 13, 13);
+}
+
+.profile-picture {
+    width: 150px;
+    height: 100px;
+    margin-top: 20px; /* Adjusted for better alignment */
+    border-radius: 50%;
+    border: 5px solid rgb(3, 3, 80);
+    margin-bottom: 30px;
+    
+}
+
+h3 {
+    font-size: 24px;
+    padding: 10px;
+    margin: 20px 0;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0  0 10px rgb(236, 14, 14);
+}
+
+.right-section {
+    width: 65%;
+    padding: 20px;
+}
+
+button {
+    font-family: sans-serif;
+    background-color: aqua;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(92, 13, 19);
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+    color: white; /* Improved button text visibility on hover */
+}
+
+
+/* Media Query for Screens up to 678px */
+@media (max-width: 678px) {
+    .resume-container {
+        flex-direction: column;
+        width: 100%;
+        box-shadow: none; /* Remove box shadow for smaller screens */
+    }
+    .left-section, .right-section {
+        width: 100%;
+        border-right: none; /* Remove right border for smaller screens */
+        text-align: left; /* Align text to the left for better readability */
+    }
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Media Query for Screens up to 320px */
+@media (max-width: 320px) {
+    body {
+        padding: 10px; /* Reduced padding for very small screens */
+    }
+    .resume-container {
+        padding: 10px; /* Reduced padding for very small screens */
+    }
+    .left-section, .right-section {
+        padding: 10px;
+    }
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    button {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
